@@ -83,7 +83,7 @@ footer {
 
 
 .main_content{
-    margin: 0 auto;
+    margin: 0;
 }
 
 #nearby_spots_title{
@@ -91,3 +91,22 @@ footer {
     border-bottom: solid 2px  #ff863b;
    
 }
+#nearby_spots_name {
+    position: absolute;
+  /*     position: absolute;これを使うとレイヤーが一つ上になる*/
+    z-index: 5;
+      /*boxの中で一番上に来ている*/
+    top: 10%;
+    left: 25%;
+    padding: 5px;
+    background-color: #ff863b;
+  }
+  .spot{
+    position: relative;
+    z-index: 1;
+    width: 840px;
+    margin: 85px auto 800px;
+      //画面スクロールのために、下マージンを大きく取っています
+  }
+
+
