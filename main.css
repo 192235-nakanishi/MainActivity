@@ -48,7 +48,7 @@ header .container h1,
 header .container h2 {
     margin: 0 auto;
     color: #fff;
-    line-height: 1;
+    line-height: 5px
 }
 header .container h1 {
     padding: 15px 0 4px 0;
@@ -81,15 +81,17 @@ footer {
     background-color: #ff863b;
 }
 
-
 .main_content{
-    margin: 0;
+    margin: 5px 5px 5px 5px;
+    width: 100%;
+    padding: 10px;
 }
 
 #nearby_spots_title{
     display: inline-block;
     border-bottom: solid 2px  #ff863b;
-   
+   width: 0 auto;
+
 }
 #nearby_spots_name {
     position: absolute;
@@ -98,15 +100,54 @@ footer {
       /*boxの中で一番上に来ている*/
     top: 10%;
     left: 25%;
-    padding: 5px;
+    padding: 5px 30px 5px 30px;
     background-color: #ff863b;
+    color: white;
   }
-  .spot{
+  .nearby_spots{
     position: relative;
     z-index: 1;
-    width: 840px;
-    margin: 85px auto 800px;
-      //画面スクロールのために、下マージンを大きく取っています
+    width: 100%;
+    background-color: antiquewhite;
+    padding: 10px;
+    /* margin-left: calc(50% -50vw); */
+    /* margin: 85px auto 800px;
+      //画面スクロールのために、下マージンを大きく取っています */
+  }
+  .NBphoto_picup_sub{
+    display:inline;
+    margin: 5px;
+    width: 30%;
+    height: 25%;
+}
+#NBphoto_picup{
+    margin: 5px;
+    width: 35%;
+    height: 50%;
+}
+.nearby_spots_photo{
+    margin: 5px;
+    width: 30%;
+    height: 30%;
+}
+
+
+
+.flex{
+    padding: 2.5% 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+    justify-content: space-around;
   }
 
+  #aaa{
+    flex-wrap: nowrap;
+  }
+  .flex > *{
+    min-width: 8%;
+  background: #fff;
+  font-size: 64px;
+  text-align: center;
+  }
 
