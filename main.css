@@ -6,9 +6,6 @@ html {
 html, body {
     height: 100%;
 }
-body *, ::before, ::after {
-    box-sizing: border-box;
-}
 body {
     margin: 0 auto;
     font-family: 'M PLUS 1p', sans-serif;
