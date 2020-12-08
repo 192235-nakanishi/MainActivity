@@ -97,7 +97,7 @@ footer {
 
 .main_content{
     margin: 5px 5px 50px 5px;
-    width: 100%;
+    /* width: 100%; */
     /* padding: 10px; */
 }
 
@@ -171,8 +171,12 @@ footer {
     height: 4%;
 }
 
+#logo{
+    width: 20%;
+text-align: center;
+}
+
 /* 転載元明記の時のプロパティ(FIDO45) */
 .photo_info{
-    margin: 0%;
-    padding: 0;
+width: auto;
 }
