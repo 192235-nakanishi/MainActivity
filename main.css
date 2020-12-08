@@ -10,7 +10,7 @@ body {
     margin: 0 auto 0 auto;
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: 400;
-    background-color: #fff;
+    /* background-color: #fff; */
     color: #000;
     display: flex;
     flex-flow: column;
@@ -97,7 +97,7 @@ footer {
 
 .main_content{
     margin: 5px 5px 50px 5px;
-    /* width: 100%; */
+    width: 100%;
     /* padding: 10px; */
 }
 
@@ -125,16 +125,13 @@ footer {
     background-color: antiquewhite;
     padding: 10px;
   }
-  .NBphoto_picup_sub{
-    display:inline;
+  .NBphoto_picup{
     margin: 5px;
-    width: 30%;
-    height: 25%;
+    max-width: 100%;
 }
-#NBphoto_picup{
-    margin: 5px;
-    width: 35%;
-    height: 50%;
+.photo{
+    width: 30%;
+    
 }
 .nearby_spots_photo{
     margin: 5px;
@@ -167,8 +164,7 @@ footer {
     font-weight: bold;
 }
 .switching{
-    width: 4%;
-    height: 4%;
+    width: 25%;
 }
 
 #logo{
