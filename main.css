@@ -17,6 +17,7 @@ body {
     min-height: 100vh;
     flex: 1;
     
+    
 }
 .container {
     max-width: 1000px;
@@ -88,7 +89,7 @@ footer {
      width: 100%;
      color: #fff;
      text-align: center;
-     padding-bottom: 10px;/*←footerの高さ*/
+     padding: 5px;
     position: fixed;/*スクロールにあわせて動く*/
     bottom: 0; /*下に固定*/
     z-index: 5;
@@ -98,49 +99,31 @@ footer {
 .main_content{
     margin: 5px 5px 50px 5px;
     width: 100%;
-    /* padding: 10px; */
+    padding: 10px;
 }
 
 .title{
+    font-size: 25px;
     border-bottom: solid 3px  #ff863b;
     width: 200px;               /* 幅指定 */
-    margin:  10px auto 40px auto; 
+    margin:  40px auto 40px auto; 
     text-align:center;  
 }
-#nearby_spots_name {
-    position: absolute;
-    /*position: absolute;これを使うとレイヤーが一つ上になる*/
-    z-index: 5;
-    /*boxの中で一番上に来ている*/
-    top: 10%;
-    left: 25%;
-    padding: 5px 30px 5px 30px;
-    background-color: #ff863b;
-    color: white;
-  }
-  .nearby_spots{
+
+.NBphoto{
     position: relative;
-    z-index: 1;
-    width: 100%;
-    background-color: antiquewhite;
-    padding: 10px;
-  }
-  .NBphoto_picup{
     margin: 5px;
     max-width: 100%;
 }
 .photo{
-    width: 30%;
-    
+    width: 30%; 
 }
-.nearby_spots_photo{
-    margin: 5px;
-    width: 30%;
-    height: 30%;
+#NBphoto_picup{
+   width: 30%;
 }
 
+
 .flex{
-    /* padding: 2.5% 0; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -148,28 +131,40 @@ footer {
     border: 4px solid;
     border-color: #ff863b;
     align-items: flex-end;
+    position: relative;
   }
-  .flex > *{
-    /* min-width: 8%; */
-    font-size: 20px;
-  }
-  #flex_pic{
+  #flex_nowrap{
     flex-wrap: nowrap;
   }
-.photo_name{
-    position: absolute;
-    left: 20px;
-    bottom: 20px;
-    color: white;
-    font-weight: bold;
-}
-.switching{
-    width: 25%;
-}
 
+.switching{
+    width: 15%;
+}
 #logo{
     width: 20%;
-text-align: center;
+}
+
+#nearby_spots_name {
+    padding: 5px 60px 5px 60px;
+    font-size: 50px;
+    color: white;
+    background-color: #ff863b;
+    z-index: 5;
+    /*boxの中で一番上に来ている*/
+    position: absolute;
+    top: 50px;
+    left: 380px;
+  }
+  .photo_name{
+    margin: 0 auto;
+	font-size:	150%;
+    text-align:	center;
+    font-weight: bold;
+	color:		#fff;
+	background:	rgba(0,0,0,0.4); /* 帯の透明度 */
+    position:	absolute; /* 絶対位置指定 */
+    left: 10px;
+    bottom: 8px;
 }
 
 /* 転載元明記の時のプロパティ(FIDO45) */
